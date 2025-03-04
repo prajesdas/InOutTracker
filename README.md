@@ -1,28 +1,44 @@
-# Count-entering-and-exiting-people-using-YOLOv8-main
-YOLOv8 is a state-of-the-art, real-time object detection and image segmentation model.
-YOLOv8 is a state-of-the-art, real-time object detection and image segmentation model. It builds on the success of previous YOLO versions, introducing new features and improvements for enhanced performance, flexibility, and efficiency. YOLOv8 supports a full range of vision AI tasks, including detection, segmentation, pose estimation, tracking, and classification.
 
-YOLOv8 is an anchor-free model, which means it predicts directly the center of an object instead of the offset from a known anchor box. This reduces the number of box predictions, which speeds up Non-Maximum Suppression (NMS), a complicated post processing step that sifts through candidate detections after inference.
 
-YOLOv8 is also built on a new architecture called MobileNetV3, which is designed for mobile and embedded devices. This makes YOLOv8 more efficient and portable than previous YOLO models, making it ideal for use in a wide range of applications, from edge devices to cloud APIs.
+# 🚶‍♂️ PeopleFlow: AI-Powered Entry & Exit Counter  
 
-Here are some of the key features of YOLOv8:
+**PeopleFlow** is an AI-based system that detects and counts people entering and exiting a space using **OpenCV** and **Deep Learning**. It utilizes object detection models to track movement across a defined zone, making it useful for **crowd monitoring, security, and smart analytics**.  
 
-* State-of-the-art object detection and image segmentation performance
-* Fast and accurate
-* Easy to use
-* Supports a wide range of vision AI tasks
-* Anchor-free model
-* Built on MobileNetV3 architecture
+## 🔹 Features  
+✅ **Real-time Person Detection** – Identifies people with bounding boxes  
+✅ **Entry & Exit Counting** – Tracks individuals crossing the defined zones  
+✅ **Live Video Processing** – Works with both recorded and live camera feeds  
+✅ **Automated Data Logging** – Stores counts for further analysis  
 
-YOLOv8 is a powerful and versatile model that can be used for a wide range of applications. If you are looking for a state-of-the-art object detection and image segmentation model that is fast, accurate, and easy to use, then YOLOv8 is a great choice.
+## 🔧 Technologies Used  
+- **Python**  
+- **OpenCV** (Computer Vision)  
+- **Deep Learning (SSD MobileNet / YOLO)**  
+- **NumPy & Pandas** (for data handling)  
 
-Here are some of the use cases for YOLOv8:
+## 📌 How to Use  
+1. Clone this repository:  
+   ```sh
+   git clone https://github.com/prajesdas/PeopleFlow.git
+   cd PeopleFlow
+   ```  
+2. Install dependencies:  
+   ```sh
+   pip install opencv-python numpy pandas
+   ```  
+3. Run the script:  
+   ```sh
+   python people_counter.py
+   ```  
 
-* Self-driving cars
-* Security cameras
-* Medical imaging
-* Retail inventory management
-* Drones
-* Robotics
-* And more!
+## 📺 Demo  
+![Screenshot 2025-02-23 014242](https://github.com/user-attachments/assets/f52af7bc-febd-4ed1-913f-48a29ef21d1a)
+![Screenshot 2025-02-23 014139](https://github.com/user-attachments/assets/0dbc63b3-55a4-4524-a2b8-b18fea070928)
+
+
+
+## 🚀 Future Enhancements  
+🔹 Integrate **YOLOv8** for more precise detection  
+🔹 Add **Web Dashboard for Real-time Monitoring**  
+🔹 Implement **Crowd Density Estimation**  
+
